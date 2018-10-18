@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { getStyle, rgbToHex } from '@coreui/coreui/dist/js/coreui-utilities';
 
 @Component({
-  templateUrl: 'colors.component.html'
+  templateUrl: 'cluster.component.html'
 })
-export class ColorsComponent implements OnInit {
+export class ClusterComponent implements OnInit {
   public themeColors(): void {
     Array.from(document.querySelectorAll('.theme-color')).forEach(function(el) {
       const elem = document.getElementsByClassName(el.classList[0])[0];

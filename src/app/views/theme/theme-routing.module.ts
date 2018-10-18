@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ColorsComponent } from './colors.component';
-import { TypographyComponent } from './typography.component';
+import { ClusterComponent } from './cluster.component';
+import { BackendsComponent } from './backends.component';
 
 const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Theme'
+      title: 'Gestion'
     },
     children: [
       {
-        path: 'colors',
-        component: ColorsComponent,
+        path: 'cluster',
+        component: ClusterComponent,
         data: {
-          title: 'Colors'
+          title: 'Cluster'
         }
       },
       {
-        path: 'typography',
-        component: TypographyComponent,
+        path: 'backends',
+        component: BackendsComponent,
         data: {
-          title: 'Typography'
+          title: 'Backends'
         }
       }
     ]
